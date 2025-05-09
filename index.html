@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dig On Base</title>
+  <link rel="icon" href="favicon.png" />
+  <style>
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @keyframes fade {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0 1rem;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      background: #00c2ff;
+      color: white;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+      display: inline-block;
+    }
+
+    .buttons a:hover {
+      background: #ff3b3b;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .carousel-wrapper {
+      overflow: hidden;
+      margin: 3rem 0;
+    }
+
+    .carousel {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: max-content;
+    }
+
+    .carousel img {
+      width: 200px;
+      height: auto;
+      margin: 0 1rem;
+      border-radius: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      background: #f0f0f0;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background: #00c2ff;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #fff;
+      font-size: 0.9rem;
+      animation: fade 6s ease-in-out infinite;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .buttons a {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+        text-align: center;
+      }
+
+      .carousel img {
+        width: 150px;
+        margin: 0 0.5rem;
+      }
+
+      table, th, td {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="buttons">
+    <a href="https://x.com/Diggonbase" target="_blank">Follow on X</a>
+    <a href="https://dexscreener.com" target="_blank">View on Dexscreener</a>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>Dig On Base</h1>
+    </header>
+
+    <section>
+      <p>
+        With community as the foundation, DIG is not just about price, but about movement.
+        Join our loyal flock and let's dig into a future full of bark, bite, and blockchain.
+      </p>
+      <p>
+        In a sea of memes and fleeting trends, Dig On Base stands tall—an organic movement bred from loyalty, mischief, and meme magic.
+        We’re not just building a token, we’re sparking a rebellion on Base. A pack that barks together, bites together—and grows together.
+        This is more than just a ticker; it’s your entry point to a culture that won’t be ignored. Don’t miss your dig.
+      </p>
+    </section>
+
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        <img src="1.jpg" alt="Dig 1" />
+        <img src="2.jpg" alt="Dig 2" />
+        <img src="3.jpg" alt="Dig 3" />
+        <img src="4.jpg" alt="Dig 4" />
+        <img src="5.jpg" alt="Dig 5" />
+        <img src="6.jpg" alt="Dig 6" />
+        <img src="7.jpg" alt="Dig 7" />
+        <img src="8.jpg" alt="Dig 8" />
+        <img src="9.jpg" alt="Dig 9" />
+        <!-- Repeating for infinite scroll effect -->
+        <img src="1.jpg" alt="Dig 1" />
+        <img src="2.jpg" alt="Dig 2" />
+        <img src="3.jpg" alt="Dig 3" />
+        <img src="4.jpg" alt="Dig 4" />
+        <img src="5.jpg" alt="Dig 5" />
+        <img src="6.jpg" alt="Dig 6" />
+        <img src="7.jpg" alt="Dig 7" />
+        <img src="8.jpg" alt="Dig 8" />
+        <img src="9.jpg" alt="Dig 9" />
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Attribute</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>Dig On Base</td>
+        </tr>
+        <tr>
+          <td>Ticker</td>
+          <td>DIG</td>
+        </tr>
+        <tr>
+          <td>Chain</td>
+          <td>Base</td>
+        </tr>
+        <tr>
+          <td>CA</td>
+          <td>To Be Announced</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="text-align: center; font-weight: bold; margin-top: 2rem;">
+      DIG isn't just a meme. It's a movement, a pack, and a promise. Let’s bark up the right chain.
+    </p>
+  </div>
+
+  <footer>
+    &copy; 2025 Dig On Base. All rights reserved.
+  </footer>
+</body>
+</html>
