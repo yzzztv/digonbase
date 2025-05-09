@@ -17,13 +17,14 @@
     }
 
     body {
+      padding-top: 25vh;
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: url('bg.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #222;
     }
-
+    
     .container {
       max-width: 960px;
       margin: 3rem auto;
@@ -84,7 +85,7 @@
 
     .carousel {
       display: flex;
-      animation: scroll 40s linear infinite;
+      animation: scroll 80s linear infinite;
       width: max-content;
     }
 
@@ -130,6 +131,9 @@
 
     /* Responsive tweaks */
     @media (max-width: 768px) {
+      body {
+        padding-top: 25vh;
+      }
       .container {
         padding: 1rem;
         margin: 1rem;
